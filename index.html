@@ -12,20 +12,7 @@
       font-family: 'Segoe UI', sans-serif;
     }
 
-    h1, h2, h3 {
-      color: #38bdf8;
-    }
-
-    a {
-      color: #facc15;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    a:hover {
-      color: #fcd34d;
-    }
-
+    /* Header Section */
     header {
       background: linear-gradient(to right, #1e3a8a, #2563eb);
       color: #fff;
@@ -35,18 +22,34 @@
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: bold;
     }
 
     header h2 {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       color: #e0f2fe;
     }
 
+    header p {
+      font-size: 1rem;
+    }
+
+    /* Typography Reset */
+    h2 {
+      font-size: 1.8rem;
+      color: #38bdf8;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: #fcd34d;
+    }
+
+    /* Sections */
     section {
       padding: 40px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .section-card {
@@ -56,20 +59,10 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul li::before {
-      content: "• ";
-      color: #38bdf8;
-      font-weight: bold;
-    }
-
+    /* NavBar */
     .navbar {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
     }
 
     .navbar-brand {
@@ -83,6 +76,27 @@
 
     .nav-link:hover {
       color: #fcd34d !important;
+    }
+
+    /* Lists */
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    a {
+      color: #facc15;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #fcd34d;
     }
 
     #contact a {
@@ -120,6 +134,7 @@
     </div>
   </nav>
 
+  <!-- Main Content -->
   <main class="container">
 
     <section id="about">
@@ -218,6 +233,7 @@
 
   </main>
 
+  <!-- Bootstrap Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
