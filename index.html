@@ -1,201 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gokulnath - Associate Software Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
-      margin: 0;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      color: #fff;
-      background: #1e2a38; /* Updated background color */
+      background-color: #1e2a38;
+      color: #d5d5d5;
     }
-
     h1, h2, h3 {
-      margin-bottom: 10px;
       color: #FFA500;
     }
-
-    p {
-      line-height: 1.5;
-      color: #D5D5D5;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      color: #D5D5D5;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
     a {
-      text-decoration: none;
       color: #FFA500;
     }
-
     a:hover {
       color: #ffcc80;
     }
-
-    header {
-      text-align: center;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #fff;
-    }
-
-    header h1 {
-      font-size: 2.5em;
-    }
-
-    header h2 {
-      font-size: 1.5em;
-      color: #ffcc80;
-    }
-
-    nav {
-      background: #fff;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-
-    .menu-toggle {
-      display: none;
-      font-size: 2em;
-      padding: 10px;
-      text-align: center;
-      background: #fff;
-      color: #2C2C34;
-      cursor: pointer;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 10px 0;
-    }
-
-    main {
-      padding-bottom: 20px;
-    }
-
-    section {
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #fff;
-    }
-
-    #contact {
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-      }
-
-      nav ul.showing {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      nav {
-        padding: 0;
-      }
+    .border-bottom-white {
+      border-bottom: 1px solid white;
     }
   </style>
 </head>
 <body>
-  <header>
+  <!-- Header -->
+  <header class="text-center py-4 border-bottom-white">
     <h1>Gokulnath P</h1>
-    <h2>Associate Software Engineer</h2>
+    <h2 class="text-warning">Associate Software Engineer</h2>
     <p>Skilled Developer with background in developing high-performing web applications, employing forward-thinking practices and collaborative team strategies.</p>
   </header>
 
-  <nav>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <ul id="nav-menu">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Work Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#certification">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certification">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <main>
-    <section id="about">
+  <main class="container">
+    <!-- About -->
+    <section id="about" class="mb-5 border-bottom-white pb-4">
       <h2>About Me</h2>
       <p>Developer passionate about delivering high-impact code, developing enterprise-grade applications, and optimizing workflows with innovative solutions. Collaborative team player with forward-thinking problem-solving skills.</p>
     </section>
-    
-    <section id="skills">
+
+    <!-- Skills -->
+    <section id="skills" class="mb-5 border-bottom-white pb-4">
       <h2>Technical Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>MySQL</li>
-        <li>REST Framework</li>
-        <li>Django</li>
-        <li>ASP.NET</li>
-        <li>C#</li>
-      </ul>
-
-      <h3>Other Tools</h3>
-      <ul>
-        <li>Inspire Designer (GMC)</li>
-        <li>Template Design</li>
-        <li>Inspire Content Manager Basic</li>
-      </ul>
-
-      <h3>Frameworks</h3>
-      <ul>
-        <li>Agile Methodologies (Scrum)</li>
-      </ul>
+      <div class="row">
+        <div class="col-md-4">
+          <ul>
+            <li>Python</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>MySQL</li>
+            <li>REST Framework</li>
+            <li>Django</li>
+            <li>ASP.NET</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Other Tools</h3>
+          <ul>
+            <li>Inspire Designer (GMC)</li>
+            <li>Template Design</li>
+            <li>Inspire Content Manager Basic</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Frameworks</h3>
+          <ul>
+            <li>Agile Methodologies (Scrum)</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="experience">
+    <!-- Experience -->
+    <section id="experience" class="mb-5 border-bottom-white pb-4">
       <h2>Work Experience</h2>
 
-      <h3>Associate Software Engineer (Mar 2024 - Present)</h3>
-      <p>Elixir Business Solutions, Chennai, India</p>
-      <ul>
-        <li>Developed web applications using HTML, CSS, JavaScript, and Python.</li>
-        <li>Built and maintained modules using ASP.NET MVC/Core.</li>
-        <li>Collaborated closely with project managers, designers, and team members to drive delivery.</li>
-        <li>Established coding standards and debugged existing code for robustness.</li>
-      </ul>
+      <div class="mb-3">
+        <h3>Associate Software Engineer (Mar 2024 - Present)</h3>
+        <p>Elixir Business Solutions, Chennai, India</p>
+        <ul>
+          <li>Developed web applications using HTML, CSS, JavaScript, and Python.</li>
+          <li>Built and maintained modules using ASP.NET MVC/Core.</li>
+          <li>Collaborated closely with project managers, designers, and team members to drive delivery.</li>
+          <li>Established coding standards and debugged existing code for robustness.</li>
+        </ul>
+      </div>
 
-      <h3>Process Analyst (Apr 2022 - Mar 2024)</h3>
-      <p>Eipp Solutions (Acquired by Elixir), Chennai, India</p>
-      <ul>
-        <li>Accurate invoice processing and training of junior team members.</li>
-        <li>Collaborated with offshore and onshore teams for effective knowledge transfer.</li>
-        <li>Client-side delivery for Billtrust, meeting operational goals and client satisfaction.</li>
-      </ul>
+      <div>
+        <h3>Process Analyst (Apr 2022 - Mar 2024)</h3>
+        <p>Eipp Solutions (Acquired by Elixir), Chennai, India</p>
+        <ul>
+          <li>Accurate invoice processing and training of junior team members.</li>
+          <li>Collaborated with offshore and onshore teams for effective knowledge transfer.</li>
+          <li>Client-side delivery for Billtrust, meeting operational goals and client satisfaction.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="education">
+    <!-- Education -->
+    <section id="education" class="mb-5 border-bottom-white pb-4">
       <h2>Education</h2>
       <h3>Diploma in Electrical & Electronics Engineering</h3>
       <p>AdhiParasakthi Polytechnic College, Melmaruvathur (76%) — 2016-2019</p>
     </section>
 
-    
-
-    <section id="certification">
+    <!-- Certifications -->
+    <section id="certification" class="mb-5 border-bottom-white pb-4">
       <h2>Certifications</h2>
       <ul>
         <li>Python</li>
@@ -203,19 +134,15 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <!-- Contact -->
+    <section id="contact" class="text-center mb-5">
       <h2>Contact</h2>
       <p>📱 8675478270</p>
       <p>✉ <a href="mailto:gokulnath1330@gmail.com">gokulnath1330@gmail.com</a></p>
-      <p>🔗 <a href="https://www.linkedin.com/in/gokul-nath-595372194/">LinkedIn</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/gokul-nath-595372194/" target="_blank">LinkedIn</a></p>
     </section>
   </main>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('nav-menu');
-      menu.classList.toggle('showing');
-    }
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
