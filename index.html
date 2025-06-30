@@ -3,98 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gokulnath - Associate Software Engineer</title>
-  <style>
-    body {
-      background: #f8f9fa;
-      color: #202122;
-      font-family: "Linux Libertine", Georgia, serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
+  <title>Gokulnath – Associate Software Engineer</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #202122;
+    line-height: 1.6;
+  }
 
-    #content {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-    }
+  a {
+    color: #3366cc;
+    text-decoration: none;
+  }
 
-    #firstHeading {
-      font-size: 2rem;
-      font-weight: bold;
-      border-bottom: 1px solid #a2a9b1;
-      margin-bottom: 1rem;
-    }
+  a:hover {
+    text-decoration: underline;
+  }
 
+  #content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  #firstHeading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    border-bottom: 1px solid #c8ccd1;
+    padding-bottom: 0.25rem;
+    color: #000000;
+  }
+
+  .tabs {
+    margin: 1rem 0;
+    border-bottom: 1px solid #c8ccd1;
+  }
+
+  .tabs a {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background: none;
+    border-bottom: 3px solid transparent;
+    color: #202122;
+  }
+
+  .tabs a:hover,
+  .tabs a.active {
+    border-color: #3366cc;
+    font-weight: bold;
+    color: #3366cc;
+  }
+
+  .mw-body {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .mw-parser-output {
+    flex: 1 1 60%;
+    min-width: 300px;
+  }
+
+  .infobox {
+    flex: 0 1 30%;
+    min-width: 200px;
+    background: #f8f9fa;
+    border: 1px solid #c8ccd1;
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .infobox h2 {
+    margin-top: 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #c8ccd1;
+    padding-bottom: 0.25rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #000000;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    color: #202122;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .section {
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 800px) {
     .mw-body {
-      display: flex;
-      gap: 2rem;
-    }
-
-    .mw-parser-output {
-      flex: 3;
+      flex-direction: column;
     }
 
     .infobox {
-      flex: 1;
-      background-color: #f8f9fa;
-      border: 1px solid #a2a9b1;
-      padding: 1rem;
-      font-size: 0.9rem;
+      order: -1;
     }
+  }
+</style>
 
-    .infobox h2 {
-      font-size: 1rem;
-      border-bottom: 1px solid #a2a9b1;
-      margin-top: 0;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      color: #000;
-      margin-top: 2rem;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-      color: #202122;
-      margin-top: 1rem;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    a {
-      color: #0645ad;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .section {
-      margin-bottom: 2rem;
-    }
-  </style>
 </head>
 <body>
   <div id="content">
     <h1 id="firstHeading">Gokulnath P</h1>
-    <div class="mw-body">
-      
-      <!-- Left/Main Content -->
-      <div class="mw-parser-output">
-        <div class="section">
-          <p><strong>Associate Software Engineer</strong></p>
-          <p>Skilled Developer with a background in high-performing web apps, forward-thinking practices, and collaborative team strategies.</p>
-        </div>
 
+    <nav class="tabs">
+      <a href="#about" class="active">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certification">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="mw-body">
+      <div class="mw-parser-output">
         <div class="section" id="about">
           <h2>About Me</h2>
-          <p>Developer passionate about delivering high-impact code, developing enterprise-grade applications, and optimizing workflows with innovative solutions. Collaborative team player with forward-thinking problem-solving skills.</p>
+          <p><strong>Associate Software Engineer</strong></p>
+          <p>Skilled Developer with a background in developing high-performing web applications, forward-thinking practices, and collaborative team strategies.</p>
         </div>
 
         <div class="section" id="skills">
@@ -105,8 +148,6 @@
             <li>MySQL</li>
             <li>REST Framework</li>
             <li>Django</li>
-            <li>ASP.NET</li>
-            <li>C#</li>
           </ul>
 
           <h3>Other Tools</h3>
@@ -124,22 +165,21 @@
 
         <div class="section" id="experience">
           <h2>Work Experience</h2>
-          
+
           <h3>Associate Software Engineer (Mar 2024 – Present)</h3>
           <p><i>Elixir Business Solutions, Chennai, India</i></p>
           <ul>
-            <li>Developed web applications using HTML, CSS, JavaScript, and Python.</li>
-            <li>Built and maintained modules using ASP.NET MVC/Core.</li>
-            <li>Collaborated closely with project managers, designers, and team members.</li>
-            <li>Established coding standards and debugged existing code.</li>
+            <li>Developed web apps using HTML, CSS, JavaScript, and Python.</li>
+            <li>Collaborated with managers, designers, and team members.</li>
+            <li>Set coding standards and debugged legacy code.</li>
           </ul>
 
           <h3>Process Analyst (Apr 2022 – Mar 2024)</h3>
           <p><i>Eipp Solutions (Acquired by Elixir), Chennai, India</i></p>
           <ul>
-            <li>Invoice processing and training of junior team members.</li>
-            <li>Knowledge transfer across offshore/onshore teams.</li>
-            <li>Client-side delivery for Billtrust.</li>
+            <li>Handled invoice processing and mentored junior staff.</li>
+            <li>Coordinated knowledge transfer between teams.</li>
+            <li>Delivered solutions for Billtrust operations.</li>
           </ul>
         </div>
 
@@ -158,14 +198,12 @@
         </div>
       </div>
 
-      <!-- Infobox / Sidebar -->
       <aside class="infobox" id="contact">
         <h2>Contact Info</h2>
-        <p><strong>Phone:</strong> 8675478270</p>
-        <p><strong>Email:</strong> <a href="mailto:gokulnath1330@gmail.com">gokulnath1330@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gokul-nath-595372194/" target="_blank">Profile</a></p>
+        <p><strong>Phone</strong>: 8675478270</p>
+        <p><strong>Email</strong>: <a href="mailto:gokulnath1330@gmail.com">gokulnath1330@gmail.com</a></p>
+        <p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/gokul-nath-595372194/" target="_blank">View Profile</a></p>
       </aside>
-
     </div>
   </div>
 </body>
